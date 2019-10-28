@@ -1,20 +1,19 @@
 <template>
-    <div id="home">
-        <NavBar></NavBar>
-        <Core></Core>
+    <div id="Home">
+        <div>
+
+        </div>
+        <div class="la">
+
+        </div>
+        <div>
+        </div>
     </div>
 </template>
 
 <script>
-    import NavBar from './NavBar.vue';
-    import Core from "./Core";
-
     export default {
-        name: "Home",
-        components: {
-            Core,
-            NavBar
-        }
+        name: "Home"
     }
 </script>
 

@@ -1,18 +1,25 @@
 import Vue from 'vue'
 import App from './App.vue'
+
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
+
+import VueRouter from 'vue-router'
+
+import Routes from './routes'
 
 Vue.config.productionTip = false
 
 Vue.use(VueMaterial);
+Vue.use(VueRouter);
 
-Vue.material.theme.register('default', {
-  primary: '#F29202',
-  accent: '#F7C375'
-})
+
+const router = new VueRouter({
+  routes: Routes,
+  mode: 'history'
+});
 
 new Vue({
   render: h => h(App),
+  router: router
 }).$mount('#app')

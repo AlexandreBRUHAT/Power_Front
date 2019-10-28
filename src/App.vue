@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <Home></Home>
+    <Core></Core>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Core from './components/Core.vue'
 
 export default {
   name: 'app',
   components: {
-    Home
+    Core
   }
 }
 </script>
 
-<style>
-  @import "./scss/global.scss";
+<style lang="scss">
+
+  @import "global.scss";
 
 </style>
