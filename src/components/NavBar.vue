@@ -56,6 +56,7 @@
         methods: {
             navigate(route) {
                 console.log("Navigate to ", route);
+                this.showNavigation = false
                 this.$router.push(route);
             }
         }
